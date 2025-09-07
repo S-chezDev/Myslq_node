@@ -11,14 +11,6 @@ export const DB_USER = process.env.DB_USER || 'root';
 export const DB_PASSWORD = process.env.DB_PASSWORD || '';
 export const DB_DATABASE = process.env.DB_DATABASE || 'companydb';
 export const DB_PORT = process.env.DB_PORT || 3306;
-
-const pool = mysql.createPool({
-    host: DB_HOST,
-    user: DB_USER,
-    password: DB_PASSWORD,
-    database: DB_DATABASE,
-    port: DB_PORT,
-});
  
 pool.getConnection()
     .then(() => console.log('Conexión exitosa a la base de datos'))
