@@ -16,9 +16,3 @@ pool.getConnection()
     .then(() => console.log('Conexión exitosa a la base de datos'))
     .catch((err) => console.error('Error de conexión a la base de datos:', err));
 // Log configuration (excluding sensitive data)
-console.log('Configuration loaded:', {
-    PORT,
-    DB_HOST,
-    DB_DATABASE,
-    DB_PORT
-});
